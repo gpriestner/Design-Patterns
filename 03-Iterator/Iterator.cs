@@ -1,6 +1,4 @@
 ﻿namespace _03_Iterator;
-
-using System;
 using System.Collections;
 
 // Aggregate

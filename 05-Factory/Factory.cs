@@ -1,7 +1,5 @@
 ﻿namespace _05_Factory;
 
-using System;
-
 // Product: Vehicle interface
 public interface IVehicle
 {
@@ -57,12 +55,13 @@ class Client
     static void Main()
     {
         // Using the Factory Method pattern
-        IVehicleFactory carFactory = new CarFactory();
-        IVehicle car = carFactory.CreateVehicle();
+        IVehicleFactory factory1 = new CarFactory();
+        IVehicleFactory factory2 = new MotorcycleFactory();
+
+        IVehicle car = factory1.CreateVehicle();
         car.Drive();
 
-        IVehicleFactory motorcycleFactory = new MotorcycleFactory();
-        IVehicle motorcycle = motorcycleFactory.CreateVehicle();
+        IVehicle motorcycle = factory2.CreateVehicle();
         motorcycle.Drive();
     }
 }

@@ -1,8 +1,5 @@
 ﻿namespace _02_Facade;
 
-using System;
-
-// Subsystem
 class SubsystemA
 {
     public void OperationA()
@@ -11,7 +8,6 @@ class SubsystemA
     }
 }
 
-// Subsystem
 class SubsystemB
 {
     public void OperationB()
@@ -20,7 +16,6 @@ class SubsystemB
     }
 }
 
-// Subsystem
 class SubsystemC
 {
     public void OperationC()
@@ -29,7 +24,6 @@ class SubsystemC
     }
 }
 
-// Facade
 class Facade
 {
     private SubsystemA subsystemA;
@@ -53,7 +47,6 @@ class Facade
     }
 }
 
-// Client
 class Client
 {
     static void Main()

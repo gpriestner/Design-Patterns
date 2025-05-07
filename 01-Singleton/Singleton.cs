@@ -6,7 +6,13 @@ class Singleton
 
     private Singleton() { }
 
-    public static Singleton Instance => instance;
+    public static Singleton Instance
+    {
+        get
+        {
+            return instance;
+        }
+    }
 }
 
 class Client
